@@ -1,0 +1,16 @@
+name: Build, Lint And Test
+on: push
+jobs:
+  build-lint-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Build
+        run: cargo build
+      - name: Run rustfmt
+        run: cargo fmt --check
+      - name: Run Clippy
+        run: cargo clippy
+      - name: Run Tests
+        run: cargo test
