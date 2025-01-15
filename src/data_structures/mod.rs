@@ -1,9 +1,11 @@
 pub use self::hash_table::*;
+pub use self::linked_list::*;
 pub use self::priority_queue::*;
 pub use self::queue::*;
 pub use self::stack::*;
 
 mod hash_table;
+mod linked_list;
 mod priority_queue;
 mod queue;
 mod stack;

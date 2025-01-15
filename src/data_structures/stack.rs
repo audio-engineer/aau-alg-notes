@@ -36,3 +36,5 @@ impl Stack {
         Ok(self.array[self.top])
     }
 }
+
+// Add DoubleLinkedListStack
